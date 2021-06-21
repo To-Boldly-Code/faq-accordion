@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | FAQ Accordion Card</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 
 <body>
@@ -59,8 +58,8 @@
             <path
               d="M114.994 175.088L4.676 109.91c-3.512-1.975-6.523-5.21-3.1-7.332l110.71-63.788c1.66-1.029 4.181-1.704 5.873-.72l115.786 67.19c3.512 2.039 4.142 7.717.643 9.775l-105.056 59.949a14.67 14.67 0 01-14.538.103z"
               fill="#6862E6" />
-            <path d="M124.09 89.094l-21.768 12.418s33.533 20.457 40.39 23.338l12.537-18.007" fill="url(#a)" opacity=".25"
-              style="mix-blend-mode:multiply" />
+            <path d="M124.09 89.094l-21.768 12.418s33.533 20.457 40.39 23.338l12.537-18.007" fill="url(#a)"
+              opacity=".25" style="mix-blend-mode:multiply" />
             <path
               d="M116.57 148.67l-21.774-12.393-21.774 12.418s11.34 6.92 22.18 13.274c6.882-4.868 13.771-9.788 21.368-13.3z"
               fill="url(#b)" opacity=".25" style="mix-blend-mode:multiply" />
@@ -169,7 +168,7 @@
             fill="#3E2928" fill-rule="nonzero" />
         </g>
       </svg>
-  
+
       <svg class="mobile-shadow" width="240" height="104" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M116.454 102.048L4.667 34.239c-3.56-2.054-6.61-5.42-3.142-7.627l112.184-66.364c1.682-1.07 4.237-1.773 5.951-.75l117.328 69.904c3.559 2.12 4.198 8.028.652 10.17L131.185 101.94a14.53 14.53 0 01-14.731.107z"
@@ -178,65 +177,76 @@
     </div>
 
     <h1>FAQ</h1>
-    <div class="question">
-      <h2>How many team members can I invite?</h2>
-      <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-      </svg>
-    </div>
-    <div class="answer">
-      <p>
-        You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-      </p>
-    </div>
-    <hr>
-    <div class="question">
-      <h2>What is the maximum file upload size?</h2>
-      <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-      </svg>
-    </div>
-    <div class="answer">
-      <p>
-        No more than 2GB. All files in your account must fit your allotted storage space.
-      </p>
+    <div class="accordion-item">
+      <div class="question">
+        <h2>How many team members can I invite?</h2>
+        <svg class="arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="answer">
+        <p>
+          You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium
+          plan.
+        </p>
+      </div>
     </div>
     <hr>
-    <div class="question">
-      <h2>How do I reset my password?</h2>
-      <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-      </svg>
-    </div>
-    <div class="answer">
-      <p>
-        Click “Forgot password” from the login page or “Change password” from your profile page.
-        A reset link will be emailed to you.
-      </p>
-    </div>
-    <hr>
-    <div class="question">
-      <h2>Can I cancel my subscription?</h2>
-      <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-      </svg>
-    </div>
-    <div class="answer">
-      <p>
-        Yes! Send us a message and we’ll process your request no questions asked.
-      </p>
+    <div class="accordion-item">
+      <div class="question">
+        <h2>What is the maximum file upload size?</h2>
+        <svg class="arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="answer">
+        <p>
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </p>
+      </div>
     </div>
     <hr>
-    <div class="question">
-      <h2>Do you provide additional support?</h2>
-      <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-      </svg>
+    <div class="accordion-item">
+      <div class="question">
+        <h2>How do I reset my password?</h2>
+        <svg class="arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="answer">
+        <p>
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </p>
+      </div>
     </div>
-    <div class="answer">
-      <p>
-        Chat and email support is available 24/7. Phone lines are open during normal business hours.
-      </p>
+    <hr>
+    <div class="accordion-item">
+      <div class="question">
+        <h2>Can I cancel my subscription?</h2>
+        <svg class="arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="answer">
+        <p>
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="accordion-item">
+      <div class="question">
+        <h2>Do you provide additional support?</h2>
+        <svg class="arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="answer">
+        <p>
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </div>
     </div>
   </section>
 </body>

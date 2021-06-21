@@ -307,4 +307,7 @@ hr {
   top: -20px;
   margin: 0 auto;
 }
-/*# sourceMappingURL=style.css.map */
+
+.answer {
+  display: none;
+}
